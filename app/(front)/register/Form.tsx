@@ -82,7 +82,7 @@ const Form = () => {
               type="text"
               id="name"
               {...register('name', {
-                required: 'Name is required',
+                required: 'Необходимо указать имя',
               })}
               className="input input-bordered w-full max-w-sm"
             />
@@ -98,7 +98,7 @@ const Form = () => {
               type="text"
               id="email"
               {...register('email', {
-                required: 'Email is required',
+                required: 'Необходим адрес электронной почты',
                 pattern: {
                   value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
                   message: 'Адрес электронной почты недействителен',

@@ -64,7 +64,7 @@ const Form = () => {
               type="text"
               id="email"
               {...register('email', {
-                required: 'Email is required',
+                required: 'Необходим адрес электронной почты',
                 pattern: {
                   value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
                   message: 'Адрес электронной почты недействителен',
@@ -84,7 +84,7 @@ const Form = () => {
               type="password"
               id="password"
               {...register('password', {
-                required: 'Password is required',
+                required: 'Необходимо ввести пароль',
               })}
               className="input input-bordered w-full max-w-sm"
             />

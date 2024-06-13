@@ -56,7 +56,7 @@ const Form = () => {
         type="text"
         id={id}
         {...register(id, {
-          required: required && `Необходимо указать ${name}`,
+          required: required && `Необходимо заполнить`,
           pattern,
         })}
         className="input input-bordered w-full max-w-sm"

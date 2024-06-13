@@ -101,7 +101,7 @@ const data = {
       category: 'Стулья',
       image: '/images/Лекси.jpg',
       price: 9900,
-      brand: '',
+      brand: 'Lexi',
       rating: 0,
       numReviews: 0,
       countInStock: 10,

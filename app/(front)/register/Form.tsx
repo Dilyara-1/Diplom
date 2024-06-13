@@ -118,7 +118,7 @@ const Form = () => {
               type="password"
               id="password"
               {...register('password', {
-                required: 'Password is required',
+                required: 'Необходимо ввести пароль',
               })}
               className="input input-bordered w-full max-w-sm"
             />
@@ -134,7 +134,7 @@ const Form = () => {
               type="password"
               id="confirmPassword"
               {...register('confirmPassword', {
-                required: 'Confirm Password is required',
+                required: 'Необходимо подтвердить пароль',
                 validate: (value) => {
                   const { password } = getValues()
                   return password === value || 'Passwords should match!'

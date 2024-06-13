@@ -71,7 +71,7 @@ export default function UserEditForm({ userId }: { userId: string }) {
           type="text"
           id={id}
           {...register(id, {
-            required: required && `${name} is required`,
+            required: required && `Необходимо заполнить`,
             pattern,
           })}
           className="input input-bordered w-full max-w-md"

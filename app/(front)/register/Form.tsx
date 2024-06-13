@@ -55,7 +55,7 @@ const Form = () => {
       })
       if (res.ok) {
         return router.push(
-          `/signin?callbackUrl=${callbackUrl}&success=Аккаунт был создан`
+          `/signin?callbackUrl=${callbackUrl}&success=Аккаунт успешно создан`
         )
       } else {
         const data = await res.json()
